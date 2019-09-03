@@ -17,17 +17,14 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
     mTcpServer.cpp \
-    mNetAssistWidget.cpp \
     mainwindow.cpp
 
 HEADERS  += \
     mdefine.h \
     mTcpServer.h \
-    mNetAssistWidget.h \
     mainwindow.h
 
 FORMS    += \
-    mNetAssistWidget.ui \
     mainwindow.ui
 
 RESOURCES += \
