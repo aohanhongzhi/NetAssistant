@@ -1,4 +1,4 @@
-# mNetAssist
+# NetAssistant
 A network debugging assistant based on Qt GUI.
 
 ## Features:
