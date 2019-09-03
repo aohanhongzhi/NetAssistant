@@ -1,15 +1,16 @@
-#include "mTcpServer.h"
-#include "mNetAssistWidget.h"
+#include "TcpServer.h"
+
+#include <QTcpSocket>
 
 /*==============================================================*/
-mTcpServer::mTcpServer(QObject *parent):QTcpServer(parent)
+TcpServer::TcpServer(QObject *parent):QTcpServer(parent)
 {
       connect(this, SIGNAL(newConnection()), this, SLOT(acceptNewClient()));
 }
 
 /*==============================================================*/
 //accept a new client and set the SIGNAL and SLOT
-void mTcpServer::acceptNewClient()
+void TcpServer::acceptNewClient()
 {
     int socketDescriptor;
    QTcpSocket *tcpClientSocket=nextPendingConnection();
@@ -29,7 +30,7 @@ void mTcpServer::acceptNewClient()
 
 /*==============================================================*/
 //send data to a client or all client
-void mTcpServer::sendDataToClient(char *msg,int length,int socketDescriptor,int socketDescriptorEx)
+void TcpServer::sendDataToClient(char *msg,int length,int socketDescriptor,int socketDescriptorEx)
 {
     for(int i=0;i<tcpClientSocketList.count();i++)
     {
@@ -56,7 +57,7 @@ void mTcpServer::sendDataToClient(char *msg,int length,int socketDescriptor,int 
 
 /*==============================================================*/
 //send disconnect a valid client tcpsocket
-void mTcpServer::clientDisconnected()
+void TcpServer::clientDisconnected()
 {
     for(int i=0;i<tcpClientSocketList.count();i++)
     {
@@ -77,7 +78,7 @@ void mTcpServer::clientDisconnected()
 
 /*==============================================================*/
 //processe a client data
-void mTcpServer::clientDataReceived()
+void TcpServer::clientDataReceived()
 {
     for(int i=0;i<tcpClientSocketList.count();i++)
     {

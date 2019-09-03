@@ -191,8 +191,8 @@
               <iconset>
                <activeoff>NetOff.png</activeoff>
                <activeon>NetOn.png</activeon>
-               <selectedoff>:/mqrc/mqrc/NetOff.png</selectedoff>
-               <selectedon>:/mqrc/mqrc/NetOn.png</selectedon>
+               <selectedoff>:/qrc/NetOff.png</selectedoff>
+               <selectedon>:/qrc/NetOn.png</selectedon>
               </iconset>
              </property>
              <property name="iconSize">

@@ -8,7 +8,7 @@ QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = mNetAssist
+TARGET = NetAssistant
 target.path=/usr/local/bin
 INSTALLS=target
 
@@ -16,19 +16,19 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-    mTcpServer.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    TcpServer.cpp
 
 HEADERS  += \
-    mdefine.h \
-    mTcpServer.h \
-    mainwindow.h
+    define.h \
+    mainwindow.h \
+    TcpServer.h
 
 FORMS    += \
     mainwindow.ui
 
 RESOURCES += \
-    mqrc.qrc
+    qrc.qrc
 
 QT  +=network
 

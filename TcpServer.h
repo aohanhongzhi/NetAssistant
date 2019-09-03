@@ -2,14 +2,12 @@
 #define SERVER_H
 
 #include <QTcpServer>
-#include <QObject>
-#include "mTcpClientSocket.h"
 
-class mTcpServer : public QTcpServer
+class TcpServer : public QTcpServer
 {
     Q_OBJECT
 public:
-    mTcpServer(QObject *parent=0);
+    TcpServer(QObject *parent=0);
     QList<QTcpSocket*> tcpClientSocketList;
 signals:
     void updateTcpServer(char*,int,int);

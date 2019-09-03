@@ -5,7 +5,7 @@
 #include <QtNetwork>
 #include <QDataStream>
 #include <QTextStream>
-#include  "mTcpServer.h"
+#include  "TcpServer.h"
 
 namespace Ui {
 class MainWindow;
@@ -93,7 +93,7 @@ private:
     //-----TCP Client-----
     QHostAddress *rmtServerIP;
     QTcpSocket *tcpClientSocket;
-    mTcpServer *mtcpServer;
+    TcpServer *mtcpServer;
 
     //Global state
     unsigned int rcvDataCnt;

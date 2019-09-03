@@ -2,7 +2,7 @@
 #include "ui_mainwindow.h"
 #include <QTranslator>
 
-#include "mdefine.h"
+#include "define.h"
 #include <QMessageBox>
 #include <stdlib.h>
 #include <QFileDialog>
@@ -502,7 +502,7 @@ void MainWindow::insertDateTimeInRcvDisp()
 /**********************************************************/
 bool MainWindow::slotTryCreateTcpServer()
 {
-    mtcpServer = new mTcpServer(this);
+    mtcpServer = new TcpServer(this);
 
     if(! mtcpServer->listen(lhAddr,lhPort))
     {
