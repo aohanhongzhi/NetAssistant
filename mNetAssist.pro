@@ -17,15 +17,18 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
     mTcpServer.cpp \
-    mNetAssistWidget.cpp
+    mNetAssistWidget.cpp \
+    mainwindow.cpp
 
 HEADERS  += \
     mdefine.h \
     mTcpServer.h \
-    mNetAssistWidget.h
+    mNetAssistWidget.h \
+    mainwindow.h
 
 FORMS    += \
-    mNetAssistWidget.ui
+    mNetAssistWidget.ui \
+    mainwindow.ui
 
 RESOURCES += \
     mqrc.qrc
@@ -36,5 +39,8 @@ RC_FILE += icon.rc
 
 DISTFILES += \
     android/AndroidManifest.xml
+
+TRANSLATIONS += language/English.ts \
+                language/Chinese.ts
 
 ANDROID_PACKAGE_SOURCE_DIR = $$PWD/android

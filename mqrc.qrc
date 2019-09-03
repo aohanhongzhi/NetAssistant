@@ -3,4 +3,8 @@
         <file>mqrc/NetOff.png</file>
         <file>mqrc/NetOn.png</file>
     </qresource>
+    <qresource prefix="/">
+        <file>language/Chinese.qm</file>
+        <file>language/English.qm</file>
+    </qresource>
 </RCC>

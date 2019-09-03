@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>480</width>
-    <height>397</height>
+    <width>758</width>
+    <height>506</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -1075,6 +1075,11 @@
     </layout>
    </item>
   </layout>
+  <action name="action1223">
+   <property name="text">
+    <string>1223</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>
