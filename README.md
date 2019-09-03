@@ -1,5 +1,5 @@
 # NetAssistant
-A network debugging assistant based on Qt GUI.
+A network debugging assistant based on Qt GUI. based on mNetAssist.
 
 ## Features:
 1. UDP；
