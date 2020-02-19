@@ -8,3 +8,7 @@ A network debugging assistant based on Qt GUI. based on mNetAssist.
 4. File transfer;
 5. Group chat mode；
 6. Multi-language;
+
+Getting Started
+This project is built on Qt5. 
+
